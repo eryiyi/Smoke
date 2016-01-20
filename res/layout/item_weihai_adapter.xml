@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@null"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="@drawable/three_item_backg"
+                    android:padding="12dp"
+                    android:layout_height="wrap_content">
+        <com.xiaolong.Smoke.widget.CircleImageView
+                android:layout_width="120dp"
+                   android:src="@drawable/three_item_head"
+                   android:id="@+id/img_one"
+                   android:layout_height="120dp"/>
+        <TextView android:layout_width="wrap_content"
+                  android:background="@drawable/three_doc"
+                  android:text="01"
+                  android:layout_toRightOf="@+id/img_one"
+                  android:id="@+id/item_doc"
+                  android:layout_marginLeft="6dp"
+                  android:gravity="center"
+                  android:textColor="@color/white"
+                  android:textSize="16sp"
+                  android:layout_height="wrap_content"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:text="吸烟影响睡眠质量"
+                android:id="@+id/item_title"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:textColor="@color/textcolor_yellow"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/item_doc"
+                android:layout_height="wrap_content"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_toRightOf="@+id/img_one"
+                  android:layout_below="@+id/item_doc"
+                  android:text="这是内容这是内容这是内容这是容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容"
+                  android:ellipsize="end"
+                  android:padding="8dp"
+                  android:lineSpacingMultiplier="1.2"
+                  android:id="@+id/content_one"
+                  android:textColor="@color/textColor"
+                  android:textSize="14sp"
+                  android:layout_height="wrap_content"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="点击次数:"
+                  android:layout_marginTop="8dp"
+                  android:layout_toLeftOf="@+id/click_one"
+                  android:layout_below="@+id/content_one"
+                  android:textColor="@color/textColor"
+                  android:textSize="14sp"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="998"
+                  android:layout_marginRight="12dp"
+                  android:id="@+id/click_one"
+                  android:layout_marginTop="8dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_below="@+id/content_one"
+                  android:textColor="@color/tuizhu_border"
+                  android:textSize="14sp"
+                  android:layout_height="wrap_content"/>
+    </RelativeLayout></LinearLayout>

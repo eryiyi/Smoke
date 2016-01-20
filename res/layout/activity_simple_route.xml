@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_backg"
+    android:orientation="vertical" >
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="@drawable/top_backg"
+                    android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content"
+                   android:src="@drawable/back"
+                   android:padding="12sp"
+                   android:onClick="back"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="路线规划"
+                  android:textColor="@color/white"
+                  android:gravity="center"
+                  android:layout_centerInParent="true"
+                  android:textSize="30dp"
+                  android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+         android:layout_marginTop="@dimen/activity_vertical_margin"
+        >
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/navi_empty_car"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            />
+
+         <TextView
+              android:layout_marginLeft="@dimen/activity_horizontal_margin"
+             android:id="@+id/car_navi_route"
+              android:textSize="18sp"
+              android:layout_marginRight="20dp"
+              android:background="@drawable/button_selector_yellow_one"
+             android:layout_width="150dp"
+              android:gravity="center"
+              android:textColor="@color/white"
+             android:layout_height="35dp"
+             android:text="@string/navi_empty_car" />
+
+         <TextView
+             android:id="@+id/car_navi_emulator"
+             android:layout_width="wrap_content"
+             android:textSize="18sp"
+             android:layout_height="wrap_content"
+             android:visibility="gone"
+             android:text="@string/navi_navi" />
+
+         <TextView
+             android:id="@+id/car_navi_navi"
+             android:textSize="18sp"
+             android:background="@drawable/button_selector_yellow_one"
+             android:layout_width="150dp"
+             android:gravity="center"
+             android:textColor="@color/white"
+             android:layout_height="35dp"
+             android:text="@string/start_navi_navi" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+         android:layout_marginTop="@dimen/activity_vertical_margin"
+        >
+          <TextView 
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="@string/navi_empty_foot"
+
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            />
+          <TextView
+              android:layout_marginLeft="@dimen/activity_horizontal_margin"
+             android:id="@+id/foot_navi_route"
+              android:textSize="18sp"
+              android:layout_marginRight="20dp"
+              android:background="@drawable/button_selector_yellow_one"
+              android:layout_width="150dp"
+              android:gravity="center"
+              android:textColor="@color/white"
+              android:layout_height="35dp"
+             android:text="@string/navi_empty_foot" />
+
+         <TextView
+             android:id="@+id/foot_navi_emulator"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:visibility="gone"
+             android:text="@string/navi_navi" />
+
+         <TextView
+             android:id="@+id/foot_navi_navi"
+             android:textSize="18sp"
+             android:background="@drawable/button_selector_yellow_one"
+             android:layout_width="150dp"
+             android:gravity="center"
+             android:textColor="@color/white"
+             android:layout_height="35dp"
+             android:text="@string/start_navi_navi" />
+    </LinearLayout>
+   <com.amap.api.maps.MapView
+           android:layout_marginTop="8dp"
+        android:id="@+id/simple_route_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_weight="1"
+        />
+</LinearLayout>

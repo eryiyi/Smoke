@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/main_backg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="@drawable/top_backg"
+                    android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content"
+                   android:src="@drawable/back"
+                   android:padding="12sp"
+                   android:onClick="back"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="戒烟论坛"
+                  android:textColor="@color/white"
+                  android:gravity="center"
+                  android:layout_centerInParent="true"
+                  android:textSize="28dp"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="回帖"
+                  android:layout_alignParentRight="true"
+                  android:textColor="@color/white"
+                  android:padding="8dp"
+                  android:id="@+id/backtie"
+                  android:textSize="16sp"
+                  android:gravity="center_vertical"
+                  android:layout_centerVertical="true"
+                  android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                    android:padding="8sp"
+                      android:layout_marginTop="20dp"
+                      android:layout_height="50dp">
+            <TextView android:layout_width="wrap_content"
+                      android:text="标题"
+                      android:id="@+id/item_title"
+                      android:padding="6dp"
+                      android:gravity="center_vertical"
+                      android:textColor="@color/black"
+                      android:textSize="18dp"
+                      android:layout_height="match_parent"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:src="@drawable/two_in"
+                        android:padding="6dp"
+                       android:gravity="center_vertical"
+                       android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    <!--<com.xiaolong.Smoke.widget.ReboundScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:background="@drawable/four_backg"-->
+            <!--android:layout_height="match_parent">-->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/four_backg"
+                android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:text="2015:"
+                      android:layout_marginLeft="8dp"
+                      android:layout_marginTop="20dp"
+                      android:layout_alignParentLeft="true"
+                      android:id="@+id/title"
+                      android:textColor="@color/textColor"
+                      android:textSize="16sp"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                      android:text="2015:"
+                      android:layout_marginTop="20dp"
+                      android:layout_alignParentRight="true"
+                      android:id="@+id/name"
+                      android:textColor="@color/tuizhu_border"
+                      android:textSize="16sp"
+                      android:layout_marginRight="8dp"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="12sp"
+                    android:layout_below="@+id/title"
+                    android:id="@+id/content"
+                    android:textSize="16sp"
+                      android:text="safasfdsafasdsafasfdsafasdfdasfssdfdsfsafasfdsafasdfdasfssdfdsfsafasfdsafasdfdasfssdfdsfsafasfdsafasdfdasfssdfdsffdasfssdfdsf"
+                      android:textColor="@color/textColor"
+                      android:layout_height="wrap_content"/>
+
+
+            <TextView android:layout_width="wrap_content"
+                      android:text="点击次数:"
+                      android:layout_marginTop="20dp"
+                      android:layout_toLeftOf="@+id/click_one"
+                      android:layout_below="@+id/content"
+                      android:textColor="@color/textColor"
+                      android:textSize="14sp"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                      android:text="998"
+                      android:layout_marginRight="12dp"
+                      android:id="@+id/click_one"
+                      android:layout_marginTop="20dp"
+                      android:layout_alignParentRight="true"
+                      android:layout_below="@+id/content"
+                      android:textColor="@color/tuizhu_border"
+                      android:textSize="14sp"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                      android:text="2015:"
+                      android:layout_marginLeft="8dp"
+                      android:layout_marginTop="20dp"
+                      android:layout_alignParentLeft="true"
+                      android:id="@+id/dateline"
+                      android:layout_below="@+id/content"
+                      android:textColor="@color/textColor"
+                      android:textSize="14sp"
+                      android:layout_height="wrap_content"/>
+
+
+            <ListView android:layout_width="match_parent"
+                      android:id="@+id/lstv"
+                      android:layout_below="@+id/dateline"
+                      android:layout_height="match_parent"
+                      android:cacheColorHint="#00000000"
+                      android:divider="#e9e9e9"
+                      android:dividerHeight="1dp"
+                      android:fadingEdge="none"
+                      android:fastScrollEnabled="false"
+                      android:footerDividersEnabled="false"
+                      android:headerDividersEnabled="false"
+                      android:smoothScrollbar="true"
+                    >
+            </ListView>
+
+
+        </RelativeLayout>
+
+</LinearLayout>

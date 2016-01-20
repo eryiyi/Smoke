@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">控烟</string>
+    <string name="main_text_one">戒烟新闻</string>
+    <string name="main_text_two">戒烟方法</string>
+    <string name="main_text_three">戒烟视频</string>
+    <string name="main_text_four">戒烟论坛</string>
+    <string name="main_text_five">戒烟门诊</string>
+    <string name="please_wait">请稍后</string>
+    <string name="main_text_six">吸烟的危害</string>
+    <string name="login_error_one">登录失败</string>
+    <string name="get_data_error">获得数据失败</string>
+    <string name="add_fail">发帖失败</string>
+    <string name="back_fail">回复失败</string>
+
+    <string-array name="main_menu_arry">
+        <item>发布帖子</item>
+        <item>我的帖子</item>
+    </string-array>
+    <string name="app_id">输入您讯飞的appid</string>
+    <string name="navibar_title">路径规划</string>
+    <string name="navi_car">驾车</string>
+    <string name="navi_foot">步行</string>
+    <string name="start_hud_navi">HUD显示</string>
+    <string name="complex_function">综合展示</string>
+
+
+    <string name="navi_empty_car">"驾车路线规划"</string>
+    <string name="navi_empty_foot">"步行路线规划"</string>
+    <string name="navi_start">"起    点"</string>
+    <string name="navi_middle">途经点</string>
+    <string name="navi_end">"终    点"</string>
+    <string name="navi_strategy">"策    略"</string>
+    <string name="navi_route">路径规划</string>
+    <string name="navi_navi">模拟导航</string>
+    <string name="start_navi_navi">实时导航</string>
+    <string name="navi_strategy_speed">速度最快</string>
+    <string name="navi_strategy_cost">避免收费</string>
+    <string name="navi_strategy_distance">距离最短</string>
+    <string name="navi_strategy_nohighway">不走高速快速路</string>
+    <string name="navi_strategy_timenojam">时间最短且躲避拥堵</string>
+    <string name="navi_strategy_costnojam">避免收费且躲避拥堵</string>
+
+    <string name="theme_blue">经典蓝</string>
+    <string name="theme_pink">可爱粉</string>
+    <string name="theme_white">简约白</string>
+
+
+
+</resources>

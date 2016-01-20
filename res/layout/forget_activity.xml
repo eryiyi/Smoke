@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/login_backg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="@drawable/top_backg"
+                    android:layout_height="wrap_content">
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="找回密码"
+                  android:textColor="@color/white"
+                  android:gravity="center"
+                  android:layout_centerInParent="true"
+                  android:textSize="20dp"
+                  android:layout_height="wrap_content"/>
+        <ImageView android:layout_width="wrap_content"
+                   android:src="@drawable/back"
+                   android:padding="12sp"
+                   android:onClick="back"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="20dp"
+              android:singleLine="true"
+              android:textSize="14sp"
+              android:textColor="@color/textColor"
+              android:text="请填入邮箱后到邮箱接收验证信函，完成验证！"
+              android:layout_height="wrap_content"/>
+
+    <EditText android:layout_width="match_parent"
+              android:layout_marginTop="6dp"
+              android:hint="邮箱"
+              android:id="@+id/email"
+              android:textSize="18sp"
+              android:singleLine="true"
+              android:paddingLeft="20dp"
+              android:background="@drawable/login_input"
+              android:layout_height="wrap_content"/>
+
+
+    <Button android:layout_width="match_parent"
+            android:background="@drawable/login_top_backg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:text="发送验证信"
+            android:id="@+id/login_btn"
+            android:textSize="18sp"
+            android:layout_marginRight="20dp"
+            android:layout_height="45dp"/>
+
+</LinearLayout>
